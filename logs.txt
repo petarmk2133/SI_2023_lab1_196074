@@ -1,0 +1,361 @@
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074
+$ echo "Petar Stevanoski 196074" >> README.md
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074
+$ git init
+Initialized empty Git repository in F:/Stvari od documents/Факултет/SI_2023_lab1_196074/.git/
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 4a8d0ed] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git branch -M master
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git remote add origin https://github.com/petarmk2133/SI_2023_lab1_196074.git
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push -u origin master
+remote: Permission to petarmk2133/SI_2023_lab1_196074.git denied to PetarStev.
+fatal: unable to access 'https://github.com/petarmk2133/SI_2023_lab1_196074.git/': The requested URL returned error: 403
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ ^C
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git remote remove origin
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git remote add origin git@github.com:petarmk2133/SI_2023_lab1_196074.git
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push -u origin master
+The authenticity of host 'github.com (140.82.121.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git remote remove origin
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git remote add origin https://github.com/petarmk2133/SI_2023_lab1_196074.git
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push -u origin master
+remote: Permission to petarmk2133/SI_2023_lab1_196074.git denied to PetarStev.
+fatal: unable to access 'https://github.com/petarmk2133/SI_2023_lab1_196074.git/': The requested URL returned error: 403
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push -u origin master
+remote: Permission to petarmk2133/SI_2023_lab1_196074.git denied to PetarStev.
+fatal: unable to access 'https://github.com/petarmk2133/SI_2023_lab1_196074.git/': The requested URL returned error: 403
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git remote set-url origin https://github.com/petarmk2133/SI_2023_lab1_196074.git
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push -u origin master
+remote: Permission to petarmk2133/SI_2023_lab1_196074.git denied to PetarStev.
+fatal: unable to access 'https://github.com/petarmk2133/SI_2023_lab1_196074.git/': The requested URL returned error: 403
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ ls -al ~/.ssh
+total 13
+drwxr-xr-x 1 Petar 197121  0 Apr  9 21:59 ./
+drwxr-xr-x 1 Petar 197121  0 Apr  9 21:59 ../
+-rw-r--r-- 1 Petar 197121 92 Apr  9 21:59 known_hosts
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ $ ssh-keygen -t ed25519 -C "sandeyedman@gmail.com"
+bash: $: command not found
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ ssh-keygen -t ed25519 -C "sandeyedman@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/Petar/.ssh/id_ed25519): key
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in key
+Your public key has been saved in key.pub
+The key fingerprint is:
+SHA256:jWrkhNXNuQRJCdKOO3LP/pbDl0uk4tufRM/JAHuZGwc sandeyedman@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|    ...ooo       |
+|     ...o+ .     |
+|     o. o E      |
+|    .o.  * =     |
+|    ..o S @ .    |
+|  . ++ . = O .   |
+|   o +=...+.=    |
+|     ooo=oo.     |
+|     .++o++.     |
++----[SHA256]-----+
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ eval "$(ssh-agent -s)"
+Agent pid 336
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ ssh-add ~/.ssh/key
+/c/Users/Petar/.ssh/key: No such file or directory
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ ssh-add ~/.ssh/id_ed25519
+/c/Users/Petar/.ssh/id_ed25519: No such file or directory
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ ssh-add ~/.ssh/id_ed25519/key
+/c/Users/Petar/.ssh/id_ed25519/key: No such file or directory
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ ssh-add ~/.ssh/id_ed25519 key
+/c/Users/Petar/.ssh/id_ed25519: No such file or directory
+Enter passphrase for key:
+Identity added: key (sandeyedman@gmail.com)
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push -u origin master
+remote: Permission to petarmk2133/SI_2023_lab1_196074.git denied to PetarStev.
+fatal: unable to access 'https://github.com/petarmk2133/SI_2023_lab1_196074.git/': The requested URL returned error: 403
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ ssh-keygen -t ed25519 -C "sandeyedman@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/Petar/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Petar/.ssh/id_ed25519
+Your public key has been saved in /c/Users/Petar/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:qSML6zkiPOQ02ZfJc7bgnLlZPGE0b1HGykxVkaePQug sandeyedman@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|          o+.oo  |
+|         .o. . . |
+|       o+.o   o  |
+|      . o*.. .   |
+|  o . ooSo.   o  |
+| = . Bo+oE . . . |
+|= o = X+.   .    |
+|o+.+ Boo.        |
+|.o=..o.          |
++----[SHA256]-----+
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git remote set-url origin git@github.com:petarmk2133/SI_2023_lab1_196074.git
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push -u origin master
+ERROR: The key you are authenticating with has been marked as read only.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git remote set-url origin https://github.com/petarmk2133/SI_2023_lab1_196074.git
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push -u origin master
+remote: Permission to petarmk2133/SI_2023_lab1_196074.git denied to PetarStev.
+fatal: unable to access 'https://github.com/petarmk2133/SI_2023_lab1_196074.git/': The requested URL returned error: 403
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push  origin master
+remote: Permission to petarmk2133/SI_2023_lab1_196074.git denied to PetarStev.
+fatal: unable to access 'https://github.com/petarmk2133/SI_2023_lab1_196074.git/': The requested URL returned error: 403
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push origin master
+remote: Permission to petarmk2133/SI_2023_lab1_196074.git denied to PetarStev.
+fatal: unable to access 'https://github.com/petarmk2133/SI_2023_lab1_196074.git/': The requested URL returned error: 403
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git pull origin master
+fatal: couldn't find remote ref master
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git config --global --unset http.proxy
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git pull origin master
+fatal: couldn't find remote ref master
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push origin master
+remote: Permission to petarmk2133/SI_2023_lab1_196074.git denied to PetarStev.
+fatal: unable to access 'https://github.com/petarmk2133/SI_2023_lab1_196074.git/': The requested URL returned error: 403
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git remote -v
+origin  https://github.com/petarmk2133/SI_2023_lab1_196074.git (fetch)
+origin  https://github.com/petarmk2133/SI_2023_lab1_196074.git (push)
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git remote set-url origin git@github.com:petarmk2133/SI_2023_lab1_196074.git
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git remote -v
+origin  git@github.com:petarmk2133/SI_2023_lab1_196074.git (fetch)
+origin  git@github.com:petarmk2133/SI_2023_lab1_196074.git (push)
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 244 bytes | 81.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:petarmk2133/SI_2023_lab1_196074.git
+ * [new branch]      master -> master
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ echo "import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class SILab1 {
+    public static List<Integer> filterOddNumbers(List<Integer> list) {
+        List<Integer> result = new ArrayList<>();
+        for (Integer el : list) {
+            if (el % 2 == 0) {
+                result.add(el);
+            }
+        }
+        return result;
+    }
+
+    private static int sumEvenNumbers(List<Integer> list) {
+        int sum = 1;
+        for (Integer el : list) {
+            if (el % 2 == 0) {
+                sum *= el;
+            }
+        }
+        return sum;
+}   }   System.out.println(sumEvenNumbers(list)););
+>
+>
+>
+>
+>
+> " >> SILab1.java
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push origin master
+
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SILab1.java
+        key
+        key.pub
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git rm -f SILab1.java
+fatal: pathspec 'SILab1.java' did not match any files
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push origin master
+
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git add SILab1.java
+warning: in the working copy of 'SILab1.java', LF will be replaced by CRLF the next time Git touches it
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   SILab1.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        key
+        key.pub
+
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git commit -m "Add java class"
+[master 16df62a] Add java class
+ 1 file changed, 47 insertions(+)
+ create mode 100644 SILab1.java
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 630 bytes | 630.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:petarmk2133/SI_2023_lab1_196074.git
+   4a8d0ed..16df62a  master -> master
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git checkout master
+Already on 'master'
+g
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git pull
+gThere is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+i
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git pull origin Master
+fatal: couldn't find remote ref Master
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git pull origin master
+From github.com:petarmk2133/SI_2023_lab1_196074
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ git merge master
+Already up to date.
+
+Petar@PetarPC MINGW64 /f/Stvari od documents/Факултет/SI_2023_lab1_196074 (master)
+$ echo "Започнав со отварање на репозиториум, поврзување на ssh клуч за да може да ги поврзам локалниот репозиториум со главниот, креирав неколку фајлови и ги поставив на главниот репозиториум и како последен чекор ги синхронизирав репозиториумите" >> 196074.txt
